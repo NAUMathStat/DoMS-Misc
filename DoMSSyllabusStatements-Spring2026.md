@@ -4,7 +4,7 @@ title: SYLLABUS POLICIES - Spring 2026
 ---
 
 ### Course Pre-requisites and Placement
-Prior toenrollment in a course in the Department, a student must have completed the course prerequisites or have proper placement for the course. It is the student's responsibility to check that they are properly enrolled in a course and to drop the course if they are not. Failure to do so could result in the student receiving no credit for the course. The department may cancel student's registration in a course in which they are not properly enrolled. It is students' responsibility to monitor their own enrollment.
+Prior to enrollment in a course in the Department, a student must have completed the course prerequisites or have proper placement for the course. It is the student's responsibility to check that they are properly enrolled in a course and to drop the course if they are not. Failure to do so could result in the student receiving no credit for the course. The department may cancel student's registration in a course in which they are not properly enrolled. It is students' responsibility to monitor their own enrollment.
 
 ### Administrative Drops
 A student may be administratively dropped through the 7th business day (**January 21, 2026**) from a course by the instructor if the student meets either of the two following criteria: (1) has not met the prerequisites for the course as stated in the academic catalog, or (2) is absent one or more times from class during the first four business days of the semester.
