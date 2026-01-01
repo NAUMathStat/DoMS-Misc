@@ -1,9 +1,9 @@
 # Setup
 title: Department of Mathematics and Statistics
 tagline: DoMS @ NAU
-url: https://naumathstat.github.io/DoMS-Misc
+url: 'http://NAUMathStat.github.io'
 paginate: 1
-baseurl: ""
+baseurl: 'DoMS-Misc'
 permalink: pretty
 
 # Gems
