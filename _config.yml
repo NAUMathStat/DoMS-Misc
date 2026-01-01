@@ -1,7 +1,7 @@
 # Setup
-title: Poole
-tagline: The Jekyll Butler
-url: https://getpoole.com
+title: Department of Mathematics and Statistics
+tagline: DoMS @ NAU
+url: https://naumathstat.github.io/DoMS-Misc
 paginate: 1
 baseurl: ""
 permalink: pretty
@@ -33,9 +33,8 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name: Mark Otto
-  url: https://twitter.com/mdo
-  email: markdotto@gmail.com
+  name: Department of Mathematics and Statistics
+  url: https://math.nau.edu
 
 # Custom vars
 version: 3.0.0
