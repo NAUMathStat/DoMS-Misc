@@ -134,14 +134,14 @@ your proofs.
 14. **Do not write the proof backwards.** Beginning students often
     attempt to write "proofs" like the following, which attempts to
     prove that $\tan^2(x)  = \sec^2(x) - 1$:
-   \\[\begin{align*}
+   \begin{align*}
     \tan^2(x) & = \sec^2(x) - 1 \\
     \left(\frac{\sin(x)}{\cos(x)}\right)^2 & = \frac{1}{\cos^2(x)} - 1 \\
     \frac{\sin^2(x)}{\cos^2(x)} & =  \frac{1-\cos^2(x)}{\cos^2(x)} \\
     \sin^2(x) & = 1-\cos^2(x) \\
     \sin^2(x) + \cos^2(x) & = 1 \\
     1 & = 1
-    \end{align*}\\]
+    \end{align*}
     Notice what has happened here: the student *started*
     with the conclusion, and deduced the true statement "$1=1$." In
     other words, they have proved "If $\tan^2(x) = \sec^2(x) - 1$, then
@@ -154,14 +154,14 @@ your proofs.
 
     Here is an example of a suitable proof for the desired result, where
     each expression follows from the one immediately proceeding it:
-   \\[\begin{align*}
+   \begin{align*}
     \sec^2(x) - 1 & = \frac{1}{\cos^2(x)} - 1\\
     & = \frac{1-\cos^2(x)}{\cos^2(x)} \\
     & = \frac{\sin^2(x)}{\cos^2(x)} \\
     & = \left(\frac{\sin(x)}{\cos(x)}\right)^2 \\
     & = \left(\tan(x)\right)^2 \\
     & = \tan^2(x).
-    \end{align*}//]
+    \end{align*}
 
 15. **Be concise.** Many beginning proof writers err by writing their
     proofs too short, so that the reader cannot understand their logic.

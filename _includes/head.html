@@ -16,8 +16,12 @@
 <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ 'atom.xml' | relative_url }}">
 
 <!-- MathJax -->
-<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS": {preferredFont: "Gyre-Termes"}, tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML'></script>
+<!-- <script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS": {preferredFont: "Gyre-Termes"}, tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML'></script> -->
+
+<script defer=""
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
 
 {% seo title=false %}
 </head>
