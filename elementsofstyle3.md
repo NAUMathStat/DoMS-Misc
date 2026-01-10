@@ -154,6 +154,7 @@ your proofs.
 
     Here is an example of a suitable proof for the desired result, where
     each expression follows from the one immediately proceeding it:
+
     $$\begin{align*}
     \sec^2(x) - 1 & = \frac{1}{\cos^2(x)} - 1\\
     & = \frac{1-\cos^2(x)}{\cos^2(x)} \\
