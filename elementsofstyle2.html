@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ElementsOfStyle</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <script defer=""
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 class="unnumbered" id="elements-of-style-for-proofs">Elements of
+Style for Proofs</h1>
+<p>Mathematics is about discovering proofs and writing them clearly and
+compellingly. The following guidelines apply whenever you write a proof.
+Keep these guidelines handy so that you may refer to them as you write
+your proofs.</p>
+<ol>
+<li><p><strong>The burden of communication lies on you, not on your
+reader.</strong> It is your job to explain your thoughts; it is not your
+reader’s job to guess them from a few hints. You are trying to convince
+a skeptical reader who does not believe you, so you need to argue with
+airtight logic in crystal clear language; otherwise the reader will
+continue to doubt. If you did not write something on the paper, then (a)
+you did not communicate it,(b) the reader did not learn it, and (c) the
+grader has to assume you did not know it in the first place.</p></li>
+<li><p><strong>Tell the reader what you are proving or citing.</strong>
+The reader does not necessarily know or remember what “Theorem 2.13” is.
+Even a professor grading a stack of papers might lose track from time to
+time. Therefore, the statement you are proving should be on the same
+page as the beginning of your proof.</p>
+<p>In most proofs you will want to refer to an earlier definition,
+problem, theorem, corollary, or lemma. In this case, you should
+reference the statement by number, but it is also helpful to the reader
+to summarize the statement you are citing. For example, you might write
+something like, “By Theorem 2.3, the sum of two consecutive integers is
+odd, and so…."</p></li>
+<li><p><strong>Use English words.</strong> Although there will usually
+be equations or mathematical statements in your proofs, use English
+sentences to connect them and display their logical relationships. If
+you at proofs in textbooks and research papers, you will see that they
+consist mostly of English words.</p></li>
+<li><p><strong>Use complete sentences.</strong> If you wrote a history
+essay in sentence fragments, the reader would not understand what you
+meant; likewise in mathematics you must use complete sentences, with
+verbs, to convey your logical train of thought.</p>
+<p>Some complete sentences can be written purely in mathematical
+symbols, such as equations (e.g., <span
+class="math inline">\(a^3=b^{-1}\)</span>), inequalities (e.g., <span
+class="math inline">\(x&lt;5\)</span>), and other relations (like <span
+class="math inline">\(5\big|10\)</span> or <span
+class="math inline">\(7\in\mathbb{Z}\)</span>). These statements usually
+express a relationship between two mathematical <em>objects</em>, like
+numbers or sets. However, it is considered bad style to begin a sentence
+with symbols. A common phrase to use to avoid starting a sentence with
+mathematical symbols is “We see that...”.</p></li>
+<li><p><strong>Show the logical connections among your
+sentences.</strong> Use phrases like “Therefore”, “Thus", “Hence",
+“Then", “since", “because”, “if…, then…”, or “if and only if” to connect
+your sentences.</p></li>
+<li><p><strong>Know the difference between statements and
+objects.</strong> A mathematical object is a <em>thing</em>, a noun,
+such as a set, an element, a number, an ordered pair, a vector space,
+etc. Objects either exist or do not exist. Statements, on the other
+hand, are mathematical <em>sentences</em>: they are either true or
+false.</p>
+<p>When you see or write a cluster of math symbols, be sure you know
+whether it is an object (e.g., “<span
+class="math inline">\(x^2+3\)</span>”) or a statement (e.g., “<span
+class="math inline">\(x^2+3&lt;7\)</span>”). One way to tell is that
+every mathematical statement includes a verb, such as <span
+class="math inline">\(=\)</span>, <span
+class="math inline">\(\leq\)</span>, <span
+class="math inline">\(\in\)</span>, “divides”, etc.</p></li>
+<li><p><strong>The symbol “<span class="math inline">\(=\)</span>” means
+“equals".</strong> Do not write <span class="math inline">\(A=B\)</span>
+unless you mean that <span class="math inline">\(A\)</span> actually
+equals <span class="math inline">\(B\)</span>. This guideline seems
+obvious, but there is a great temptation to be sloppy. In calculus, for
+example, some people might write <span
+class="math inline">\(f(x)=x^{2}=2x\)</span> (which is false), when they
+really mean that “if <span class="math inline">\(f(x)=x^{2}\)</span>,
+then <span class="math inline">\(f&#39;(x)=2x\)</span>.”</p></li>
+<li><p><strong>Do not interchange <span
+class="math inline">\({=}\)</span> and <span
+class="math inline">\({\Longrightarrow}\)</span>.</strong> The equals
+sign connects two <em>objects</em>, as in “<span
+class="math inline">\(x^2=b\)</span>”; the symbol “<span
+class="math inline">\(\Longrightarrow\)</span>” is an abbreviation for
+“implies” and connects two <em>statements</em>, as in “<span
+class="math inline">\(a+b=a \Longrightarrow b=0\)</span>.” You should
+avoid using <span class="math inline">\(\Longrightarrow\)</span> in
+formal write-ups of proofs.</p></li>
+<li><p><strong>Avoid logical symbols in your proofs.</strong> Similar to
+<span class="math inline">\(\Longrightarrow\)</span>, you should avoid
+using the logical symbols <span class="math inline">\(\forall, \exists,
+\vee, \wedge\)</span>, and <span
+class="math inline">\(\Longleftrightarrow\)</span> in your formal
+write-ups. These symbols are useful for abbreviating in your scratch
+work.</p></li>
+<li><p><strong>Say exactly what you mean.</strong> Just as <span
+class="math inline">\(=\)</span> is sometimes abused, so too people
+sometimes write <span class="math inline">\(A\in B\)</span> when they
+mean <span class="math inline">\(A\subseteq B\)</span>, or write <span
+class="math inline">\(a_{ij}\in A\)</span> when they mean that <span
+class="math inline">\(a_{ij}\)</span> is an entry in matrix <span
+class="math inline">\(A\)</span>. Mathematics is a very precise
+language, and there is a way to say exactly what you mean; find it and
+use it.</p></li>
+<li><p><strong>Do not utilize anything unproven.</strong> Every
+statement in your proof should be something you <em>know</em> to be
+true. The reader expects your proof to be a series of statements, each
+proven by the statements that came before it. If you ever need to write
+something you do not yet know is true, you <em>must</em> preface it with
+words like “assume,” “suppose,” or “if” if you are temporarily assuming
+it, or with words like “we need to show that” or “we claim that” if it
+is your goal. Otherwise, the reader will think they have missed part of
+your proof.</p></li>
+<li><p><strong>Write strings of equalities (or inequalities) in the
+proper order.</strong> When your reader sees something like <span
+class="math display">\[A=B\leq C=D,\]</span> they expect to understand
+easily why <span class="math inline">\(A=B\)</span>, why <span
+class="math inline">\(B\leq C\)</span>, and why <span
+class="math inline">\(C=D\)</span>, and they expect the point of the
+entire line to be the more complicated fact that <span
+class="math inline">\(A\leq D\)</span>. For example, if you were
+computing the distance <span class="math inline">\(d\)</span> of the
+point <span class="math inline">\((12,5)\)</span> from the origin, you
+could write <span class="math display">\[d = \sqrt{12^2+5^2} =
+13.\]</span> In this string of equalities, the first equals sign is true
+by the Pythagorean theorem, the second is just arithmetic, and the
+conclusion is that the first item equals the last item: <span
+class="math inline">\(d=13\)</span>.</p>
+<p>A common error is to write strings of equations in the wrong order.
+For example, if you were to write “<span
+class="math inline">\(\sqrt{12^2+5^2}=13=d\)</span>”, your reader would
+understand the first equals sign, would be baffled as to how we know
+<span class="math inline">\(d=13\)</span>, and would be utterly
+perplexed as to why you wanted or needed to go through <span
+class="math inline">\(13\)</span> to prove that <span
+class="math inline">\(\sqrt{12^2+5^2}=d\)</span>.</p></li>
+<li><p><strong>Avoid circularity.</strong> Be sure that no step in your
+proof makes use of the conclusion!</p></li>
+<li><p><strong>Do not write the proof backwards.</strong> Beginning
+students often attempt to write “proofs” like the following, which
+attempts to prove that <span class="math inline">\(\tan^2(x)  =
+\sec^2(x) - 1\)</span>: <span class="math display">\[\begin{align*}
+\tan^2(x) &amp; = \sec^2(x) - 1 \\
+\left(\frac{\sin(x)}{\cos(x)}\right)^2 &amp; = \frac{1}{\cos^2(x)} - 1
+\\
+\frac{\sin^2(x)}{\cos^2(x)} &amp; =  \frac{1-\cos^2(x)}{\cos^2(x)} \\
+\sin^2(x) &amp; = 1-\cos^2(x) \\
+\sin^2(x) + \cos^2(x) &amp; = 1 \\
+1 &amp; = 1
+\end{align*}\]</span> Notice what has happened here: the student
+<em>started</em> with the conclusion, and deduced the true statement
+“<span class="math inline">\(1=1\)</span>.” In other words, they have
+proved “If <span class="math inline">\(\tan^2(x) = \sec^2(x) -
+1\)</span>, then <span class="math inline">\(1=1\)</span>,” which is
+true but highly uninteresting.</p>
+<p>Now this is not a bad way of <em>finding</em> a proof. Working
+backwards from your goal often is a good strategy <em>on your scratch
+paper</em>, but when it is time to <em>write</em> your proof, you have
+to start with the hypotheses and work to the conclusion.</p>
+<p>Here is an example of a suitable proof for the desired result, where
+each expression follows from the one immediately proceeding it: <span
+class="math display">\[\begin{align*}
+\sec^2(x) - 1 &amp; = \frac{1}{\cos^2(x)} - 1\\
+&amp; = \frac{1-\cos^2(x)}{\cos^2(x)} \\
+&amp; = \frac{\sin^2(x)}{\cos^2(x)} \\
+&amp; = \left(\frac{\sin(x)}{\cos(x)}\right)^2 \\
+&amp; = \left(\tan(x)\right)^2 \\
+&amp; = \tan^2(x).
+\end{align*}\]</span></p></li>
+<li><p><strong>Be concise.</strong> Many beginning proof writers err by
+writing their proofs too short, so that the reader cannot understand
+their logic. It is nevertheless quite possible to be too wordy, and if
+you find yourself writing a full-page essay, it is possible that you do
+not really have a proof, but just some intuition. When you find a way to
+turn that intuition into a formal proof, it will be much
+shorter.</p></li>
+<li><p><strong>Introduce every symbol you use.</strong> If you use the
+letter “<span class="math inline">\(k\)</span>,” the reader should know
+exactly what <span class="math inline">\(k\)</span> is. Good phrases for
+introducing symbols include “Let <span class="math inline">\(n\in
+\mathbb{N}\)</span>,” “Let <span class="math inline">\(k\)</span> be the
+least integer such that…,” “For every real number <span
+class="math inline">\(a\)</span>…,” and “Suppose <span
+class="math inline">\(A\subseteq\mathbb{R}\ldots\)</span>".</p></li>
+<li><p><strong>Use appropriate quantifiers (once).</strong> When you
+introduce a variable <span class="math inline">\(x\in S\)</span>, it
+must be clear to your reader whether you mean “for all <span
+class="math inline">\(x\in S\)</span>” or just “for some <span
+class="math inline">\(x\in S\)</span>.” If you just say something like
+“<span class="math inline">\(y=x^2\)</span> where <span
+class="math inline">\(x\in S\)</span>,” the word “where” does not
+indicate whether you mean “for all” or “some”.</p>
+<p>Phrases indicating the quantifier “for all” include “Let <span
+class="math inline">\(x\in S\)</span>”; “for all <span
+class="math inline">\(x\in S\)</span>”; “for every <span
+class="math inline">\(x\in S\)</span>”; “for each <span
+class="math inline">\(x\in S\)</span>”; etc. Phrases indicating the
+quantifier “some” or “there exists”) include “for some <span
+class="math inline">\(x\in S\)</span>”; “there exists an <span
+class="math inline">\(x\in S\)</span>”; “for a suitable choice of <span
+class="math inline">\(x\in S\)</span>”; etc.</p>
+<p>Once you have said “Let <span class="math inline">\(x\in S\)</span>,”
+the letter <span class="math inline">\(x\)</span> has its meaning
+defined. You do not need to say “for all <span
+class="math inline">\(x\in S\)</span>” again, and you definitely should
+<em>not</em> say “let <span class="math inline">\(x\in S\)</span>”
+again.</p></li>
+<li><p><strong>Use a symbol to mean only one thing.</strong> Once you
+use the letter <span class="math inline">\(x\)</span> once, its meaning
+is fixed for the duration of your proof. You cannot use <span
+class="math inline">\(x\)</span> to mean anything else. There is an
+exception to this guideline. Sometimes a proof will include multiple
+subproofs that are distinct from each other. In this case, you can reuse
+a variable or symbol as long as it is clear to the reader that you have
+concluded with the previous subproof and have moved onto a new
+subproof.</p></li>
+<li><p><strong>Do not “prove by example.”</strong><span id="pfbyexample"
+data-label="pfbyexample"></span> Most problems ask you to prove that
+something is true “for all”—You <em>cannot</em> prove this by giving a
+single example, or even a hundred. Your proof will need to be a logical
+argument that holds for <em>every example there possibly could
+be</em>.</p>
+<p>On the other hand, if the claim that you are trying to prove involves
+the existence of a mathematical object with a particular property, then
+providing a specific example is sufficient.</p></li>
+<li><p><strong>Write “Let <span class="math inline">\(x=\dots\)</span>,”
+not “Let <span class="math inline">\(\dots=x\)</span>.”</strong> When
+you have an existing expression, say <span
+class="math inline">\(a^{2}\)</span>, and you want to give it a new,
+simpler name like <span class="math inline">\(b\)</span>, you should
+write “Let <span class="math inline">\(b=a^{2}\)</span>,” which means,
+“Let the new symbol <span class="math inline">\(b\)</span> mean <span
+class="math inline">\(a^{2}\)</span>.” This convention makes it clear to
+the reader that <span class="math inline">\(b\)</span> is the brand-new
+symbol and <span class="math inline">\(a^{2}\)</span> is the old
+expression he/she already understands.</p>
+<p>If you were to write it backwards, saying “Let <span
+class="math inline">\(a^{2}=b\)</span>,” then your startled reader would
+ask, “What if <span class="math inline">\(a^{2}\neq
+b\)</span>?”</p></li>
+<li><p><strong>Make your counterexamples concrete and specific.</strong>
+Proofs need to be entirely general, but counterexamples should be
+concrete. When you provide an example or counterexample, make it as
+specific as possible. For a set, for example, you must specify its
+elements, and for a function you must specify the corresponding relation
+(possibly an algebraic rule) and its domain and codomain. Do not say
+things like “<span class="math inline">\(f\)</span> could be one-to-one
+but not onto”; instead, provide an actual function <span
+class="math inline">\(f\)</span> that is one-to-one but not
+onto.</p></li>
+<li><p><strong>Do not include examples in proofs.</strong> Including an
+example very rarely adds anything to your proof. If your logic is sound,
+then it does not need an example to back it up. If your logic is bad, a
+dozen examples will not help it (see Guideline <a href="#pfbyexample"
+data-reference-type="ref"
+data-reference="pfbyexample">[pfbyexample]</a>). There are only two
+valid reasons to include an example in a proof: if it is a
+<em>counterexample</em> disproving something, or if you are performing
+complicated manipulations in a general setting and the example is just
+to help the reader understand what you are saying.</p></li>
+<li><p><strong>Use scratch paper.</strong> Finding your proof will be a
+long, potentially messy process, full of false starts and dead ends. Do
+all that on scratch paper until you find a real proof, and only then
+break out your clean paper to write your final proof carefully.</p>
+<p>Only sentences that actually contribute to your proof should be part
+of the proof. Do not just perform a “brain dump,” throwing everything
+you know onto the paper before showing the logical steps that prove the
+conclusion. <em>That is what scratch paper is for.</em></p></li>
+</ol>
+</body>
+</html>
