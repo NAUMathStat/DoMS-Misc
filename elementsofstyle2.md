@@ -1,5 +1,7 @@
 # Elements of Style for Proofs {#elements-of-style-for-proofs .unnumbered}
 
+This work is an adaptation of *The Elements of Style for Proofs* written by Anders Hendrickson. This version is currently maintained by [Dana C. Ernst](http://danaernst.com).
+
 Mathematics is about discovering proofs and writing them clearly and
 compellingly. The following guidelines apply whenever you write a proof.
 Keep these guidelines handy so that you may refer to them as you write
