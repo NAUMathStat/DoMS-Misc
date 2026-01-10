@@ -109,13 +109,17 @@ your proofs.
 
 12. **Write strings of equalities (or inequalities) in the proper
     order.** When your reader sees something like
+
     $$A=B\leq C=D,$$
+
     they expect to understand easily why $A=B$, why $B\leq C$, and why $C=D$,
     and they expect the point of the entire line to be the more
     complicated fact that $A\leq D$. For example, if you were computing
     the distance $d$ of the point $(12,5)$ from the origin, you could
     write
+
     $$d = \sqrt{12^2+5^2} = 13.$$
+
     In this string of equalities,
     the first equals sign is true by the Pythagorean theorem, the second
     is just arithmetic, and the conclusion is that the first item equals
@@ -134,6 +138,7 @@ your proofs.
 14. **Do not write the proof backwards.** Beginning students often
     attempt to write "proofs" like the following, which attempts to
     prove that $\tan^2(x)  = \sec^2(x) - 1$:
+
     $$\begin{align*}
     \tan^2(x) & = \sec^2(x) - 1 \\
     \left(\frac{\sin(x)}{\cos(x)}\right)^2 & = \frac{1}{\cos^2(x)} - 1 \\
@@ -142,6 +147,7 @@ your proofs.
     \sin^2(x) + \cos^2(x) & = 1 \\
     1 & = 1
     \end{align*}$$
+
     Notice what has happened here: the student *started*
     with the conclusion, and deduced the true statement "$1=1$." In
     other words, they have proved "If $\tan^2(x) = \sec^2(x) - 1$, then
