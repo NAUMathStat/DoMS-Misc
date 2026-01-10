@@ -189,15 +189,15 @@ your proofs.
     something like "$y=x^2$ where $x\in S$," the word "where" does not
     indicate whether you mean "for all" or "some".
 
-    Phrases indicating the quantifier "for all" include "Let $x\in S$";
+    Phrases indicating the quantifier "for all" include "Assume $x\in S$";
     "for all $x\in S$"; "for every $x\in S$"; "for each $x\in S$"; etc.
     Phrases indicating the quantifier "some" or "there exists") include
     "for some $x\in S$"; "there exists an $x\in S$"; "for a suitable
     choice of $x\in S$"; etc.
 
-    Once you have said "Let $x\in S$," the letter $x$ has its meaning
+    Once you have said "Assume $x\in S$," the letter $x$ has its meaning
     defined. You do not need to say "for all $x\in S$" again, and you
-    definitely should *not* say "let $x\in S$" again.
+    definitely should *not* say "assume $x\in S$" again.
 
 18. **Use a symbol to mean only one thing.** Once you use the letter $x$
     once, its meaning is fixed for the duration of your proof. You
